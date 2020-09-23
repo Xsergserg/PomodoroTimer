@@ -1,0 +1,116 @@
+.App {
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: antiquewhite;
+}
+
+h2 {
+  margin: 0;
+}
+.timerBody {
+  border: 5px solid antiquewhite;
+  border-radius:10px;
+  display: grid;
+  grid-row: repeat (4, auto);
+  grid-column: auto auto;
+  grid-template-areas: 
+  "label label"
+  "break session"
+  "timer timer"
+  "buttons buttons";
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.label {
+  font-family: 'Oswald', sans-serif;
+  grid-area: label;
+  font-size: 55px;
+}
+
+.break {
+  grid-area: break;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 50px;
+  margin: 5px;
+}
+
+.session {
+  grid-area: session;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 10px;
+    margin: 5px;
+}
+
+.timer {
+  grid-area: timer;
+  margin: 10px;
+  justify-content: center;
+}
+
+.timer-container {
+  border: 5px solid antiquewhite;
+  border-radius: 40px;
+  display: inline-block;
+  padding: 20px;
+  width: 150px;
+}
+
+.sectorsButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+#session-length {
+  font-size: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+}
+
+.signs {
+  font-size: 35px;
+}
+#break-length {
+  font-size: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+  grid-area: buttons;
+  padding: 10px;
+}
+
+.buttons {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+@font-face {
+  font-family: "digital-7"; 
+  src: url("./media/digital-7.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+  }
+
+
